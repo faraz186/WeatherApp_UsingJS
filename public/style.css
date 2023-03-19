@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("img/sunny.jpg");
+  min-height: 100vh;
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header h4 {
+  color: #b49902;
+  font-weight: 700;
+  font-size: 2.4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.app-main {
+  min-height: 25vh;
+  width: 30vw;
+  position: absolute;
+  top: 13%;
+  left: 34%;
+  /* margin: 50px auto; */
+  padding: 25px;
+  text-align: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 30px;
+  background: #c0dfec; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #fff765,
+    #c0dfec
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #fff765,
+    #c0dfec
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.app-main > * {
+  margin-bottom: 20px;
+}
+.input-box {
+  width: 100%;
+  background: azure;
+  color: #441001;
+  font-weight: 500;
+  border: none;
+  font-size: 1.7rem;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+.weather-body {
+  color: #fff;
+  padding: 20px;
+  line-height: 2rem;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: none;
+  background: linear-gradient(
+    to top,
+    #eb1a4e,
+    #fe6d44
+  );
+}
+.location-deatils {
+  font-weight: bold;
+}
+.weather-status {
+  padding: 30px;
+}
+.temp {
+  font-size: 4.7rem;
+  font-weight: 700;
+  margin-bottom: 20px 0px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+.weather {
+  margin-top: 30px;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+.min-max {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.day_details {
+  padding: 25px;
+}
+.sun-detail,
+.basic {
+  font-size: 1.15rem;
+}
+#weather-icon {
+  color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+  .app-main {
+    width: 95%;
+    padding: 10px;
+  }
+  body {
+    min-height: 94vh;
+  }
+}
