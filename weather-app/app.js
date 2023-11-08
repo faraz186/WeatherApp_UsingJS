@@ -1,8 +1,10 @@
-const API_KEY = `c0ef75261a97cb8945e927fb43a01d09`
+const API_KEY = `****************************************`
+
 const input = document.getElementById("search")
 const weather = document.getElementById("weather")
 
-const getWeather = async(city)=>{
+const getWeather = async(city)=>
+    {
     weather.innerHTML = `<div class="spinner-grow text-info" role="status">
     <span class="visually-hidden">Loading...</span>
   </div>`;
